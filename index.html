@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>  My Profile | Ogi Wemy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"><link rel="stylesheet" href="./style.css">
+
+<body>
+  
+<div class="profile">
+  <div class="photo"><img src="ogiwemy.jpg"/></div>
+  <div class="content">
+    <div class="text">
+      <h3>Ogi WeMy</h3>
+      <h6>Student at Klabat University</h6>
+    </div>
+    <div class="btn"><span></span></div>
+  </div>
+  <div class="box">
+    <i class="fa-brands fa-facebook" data-link="https://www.facebook.com/giovano.giovano.165"></i>
+    <i class="fa-brands fa-twitter" data-link="https://twitter.com/WemyOgi"></i>
+    <i class="fa-brands fa-github" data-link="https://github.com/24wemy"></i>
+    <i class="fa-brands fa-instagram" data-link="https://www.instagram.com/ogiwemy/"></i>
+    <i class="fa-brands fa-telegram" data-link="https://www.telegram.com"></i>
+  </div>
+  <!-- javascript -->
+  <script>
+    const icons = document.querySelectorAll('.box i');
+    icons.forEach(icon => {
+      icon.addEventListener('click', () => {
+        const link = icon.getAttribute('data-link');
+        window.open(link, '_blank');
+      });
+    });
+  </script>
+  
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <video width="800" height="600" autoplay loop muted>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+  <audio autoplay>
+    <source src="lagu.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
